@@ -1,0 +1,27 @@
+.home__slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .home__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; 
+  }
+  
+  .home__slide:first-child {
+    display: block; 
+  }
+  .about__img{
+    height: 35%;
+    border-radius: 50px;
+    box-shadow: 5px 0 5px 2px red;
+
+  }
+  .blog__post-img, .news___img{
+    height: 20%;
+    width: 40%;
+  }
