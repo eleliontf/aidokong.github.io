@@ -1,4 +1,399 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head><title> aidoko</title></head>
-<body> <h1>Hello </h1> </body> </html
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/jquery/jquery.js"></script>
+        <script src="/jquery/customjq.js"></script>
+        <link rel="stylesheet" href="assets/css/custom.css">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="/boostrap/css/custom.css"> -->
+        <!-- <link rel="stylesheet" href="boostrap/css/bootstrap.min.css"> -->
+        <!-- <link rel="stylesheet" href="boostrap/css/bootstrap.rtl.min.css"> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        <title>Aidoko | Home</title>
+    </head>
+<body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+    
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="index.html" class="nav__logo">
+                <!-- <img class="logo__main" src="assets/img/logo.png" alt="">
+            <img src="assets/img/logo1.png" alt="" class="logo__secondary">
+             -->
+             <div class="logo__main">
+                <img src="/assets/img/logo.png" alt="Logo 1" class="logo__primary">
+                <img src="/assets/img/logo2.png" alt="logo" class="logo__secondary" style="display: none;"> 
+              </div>
+            </a>
+
+            <div class="nav__menu" id="nav-menu" style="background-color: #DA2535;">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link ">Home</a></li>
+
+                    <li class="nav__item dropdown">
+                        <a class="nav__link active-link">News</a>
+                        <div class="dropdown-content">
+                            <a href="newsclimate.html">Climate News</a>
+                            <a href="newstech.html">Tech News</a>
+                            <a href="newsdesign.html">Design</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav__item"><a href="design.html" class="nav__link">Designs | Animation</a></li>
+                    <li class="nav__item"><a href="Tech.html" class="nav__link">Tech | Programming</a></li>
+                    <li class="nav__item"><a href="climate.html" class="nav__link">Climate Change</a></li>
+
+                    <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid slider">
+                <div class="home__slide">
+                    <div class="home__img">
+                        <img src="assets/img/home1.png" alt="">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Send A Gift For Christmas</h1>
+                        <p class="home__description">In these end of the year holidays send a gift to your loved one and share the happiness at Christmas.</p>
+                        <a href="#" class="button">Get Started</a>
+                    </div>
+                </div>
+                <div class="home__slide">
+                    <div class="home__img">
+                        <img src="assets/img/home21.png" alt="">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Celebrate with Joy</h1>
+                        <p class="home__description">Share the joy of the season with your loved ones by sending them a special gift.</p>
+                        <a href="#" class="button">Get Started</a>
+                    </div>
+                </div>
+                <div class="home__slide">
+                    <div class="home__img">
+                        <img src="assets/img/home1.png" alt="">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Spread Love</h1>
+                        <p class="home__description">Make this Christmas memorable by spreading love and happiness.</p>
+                        <a href="#" class="button">Get Started</a>
+                    </div>
+                </div>
+                <div class="home__slide">
+                    <div class="home__img">
+                        <img src="assets/img/home.png" alt="">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Joyful Moments</h1>
+                        <p class="home__description">Create joyful moments by sending thoughtful gifts to your loved ones.</p>
+                        <a href="#" class="button">Get Started</a>
+                    </div>
+                </div>
+                <div class="home__slide">
+                    <div class="home__img">
+                        <img src="assets/img/home.png" alt="">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Cherish Together</h1>
+                        <p class="home__description">Cherish the moments together by sharing gifts and love this Christmas.</p>
+                        <a href="#" class="button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== YOUTUBE VIDEOS ==========-->
+        <section class="videos section bd-container" id="videos">
+            <h2 class="section-title">Watch Our Videos</h2>
+            <div class="videos__container bd-grid">
+                <div class="video__content">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="video__title">Video Title 1</h3>
+                </div>
+                <div class="video__content">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="video__title">Video Title 2</h3>
+                </div>
+                <div class="video__content">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="video__title">Video Title 3</h3>
+                </div>
+                <div class="video__content">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="video__title">Video Title 4</h3>
+                </div>
+            </div>
+        </section>
+
+        <!--========== SHARE ==========-->
+        <section class="share section bd-container" id="share">
+            <div class="share__container bd-grid">
+                <div class="share__data">
+                    <h2 class="section-title-center">Sharing Is The Best Gift <br> You Can Give</h2>
+                    <p class="share__description">Sharing these holidays is the best gift you can give, give a present or share your love with the people you love the most and celebrate with great happiness.</p>
+                    <a href="#" class="button">Send a Gift</a>
+                </div>
+
+                <div class="share__img">
+                    <img src="assets/img/shared.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--========== DECORATION ==========-->
+        <section class="decoration section bd-container" id="decoration">
+            <h2 class="section-title">Give Christmas Decorations <br> For Your Home</h2>
+            <div class="decoration__container bd-grid">
+                <div class="decoration__data">
+                    <img src="assets/img/decoration1.png" alt="" class="decoration__img">
+                    <h3 class="decoration__title">Christmas Bells</h3>
+                    <a href="#" class="button button-link">Go Shopping</a>
+                </div>
+
+                <div class="decoration__data">
+                    <img src="assets/img/decoration2.png" alt="" class="decoration__img">
+                    <h3 class="decoration__title">Christmas Candies</h3>
+                    <a href="#" class="button button-link">Go Shopping</a>
+                </div>
+
+                <div class="decoration__data">
+                    <img src="assets/img/decoration3.png" alt="" class="decoration__img">
+                    <h3 class="decoration__title">Christmas Trees</h3>
+                    <a href="#" class="button button-link">Go Shopping</a>
+                </div>
+            </div>
+        </section>
+
+        <!--========== ACCESSORIES ==========-->
+        <section class="accessory section bd-container" id="accessory">
+            <h2 class="section-title">New Christmas <br> Accessories</h2>
+
+            <div class="accessory__container bd-grid">
+                <div class="accessory__content">
+                    <img src="assets/img/accessory1.png" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Snow Globe</h3>
+                    <span class="accessory__category">Accessory</span>
+                    <span class="accessory__preci">$9.45</span>
+                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/accessory2.png" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Candy</h3>
+                    <span class="accessory__category">Accessory</span>
+                    <span class="accessory__preci">$2.52</span>
+                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/accessory3.png" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Angel</h3>
+                    <span class="accessory__category">Accessory</span>
+                    <span class="accessory__preci">$13.15</span>
+                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/accessory4.png" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Sphere</h3>
+                    <span class="accessory__category">Accessory</span>
+                    <span class="accessory__preci'>$4.25</span>
+                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/accessory5.png" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Surprise gift</h3>
+                    <span class="accessory__category">Accessory</span>
+                    <span class="accessory__preci">$7.99</span>
+                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--========== BLOG ==========-->
+        <section class="blog section bd-container" id="blog">
+            <h2 class="section-title">Latest News</h2>
+            <div class="blog__container bd-grid">
+                <div class="blog__content">
+                    <h3 class="blog__title">Tech</h3>
+                    <div class="blog__post">
+                        <img src="assets/img/tech1.jpg" alt="Tech News 1" class="blog__post-img">
+                        <h4 class="blog__post-title">Latest in Tech</h4>
+                        <p class="blog__post-description">Stay updated with the latest trends and advancements in technology.</p>
+                        <a href="newstech.html" class="button button-link">Read More</a>
+                    </div>
+                    <div class="blog__post">
+                        <img src="assets/img/tech2.jpg" alt="Tech News 2" class="blog__post-img">
+                        <h4 class="blog__post-title">AI Innovations</h4>
+                        <p class="blog__post-description">Discover the latest innovations in artificial intelligence and machine learning.</p>
+                        <a href="newstech.html" class="button button-link">Read More</a>
+                    </div>
+                    <!-- Add more tech posts here -->
+                </div>
+
+                <div class="blog__content">
+                    <h3 class="blog__title">Climate</h3>
+                    <div class="blog__post">
+                        <img src="assets/img/climate1.jpg" alt="Climate News 1" class="blog__post-img">
+                        <h4 class="blog__post-title">Climate Change Updates</h4>
+                        <p class="blog__post-description">Get the latest news and updates on climate change and its impact.</p>
+                        <a href="newsclimate.html" class="button button-link">Read More</a>
+                    </div>
+                    <div class="blog__post">
+                        <img src="assets/img/climate2.jpg" alt="Climate News 2" class="blog__post-img">
+                        <h4 class="blog__post-title">Sustainable Living</h4>
+                        <p class="blog__post-description">Learn about sustainable living practices and how you can contribute to a greener planet.</p>
+                        <a href="newsclimate.html" class="button button-link">Read More</a>
+                    </div>
+                    <!-- Add more climate posts here -->
+                </div>
+
+                <div class="blog__content">
+                    <h3 class="blog__title">Animation</h3>
+                    <div class="blog__post">
+                        <img src="assets/img/animation1.jpg" alt="Animation News 1" class="blog__post-img">
+                        <h4 class="blog__post-title">Animation News</h4>
+                        <p class="blog__post-description">Discover the latest news and trends in the world of animation.</p>
+                        <a href="newsdesign.html" class="button button-link">Read More</a>
+                    </div>
+                    <div class="blog__post">
+                        <img src="assets/img/animation2.jpg" alt="Animation News 2" class="blog__post-img">
+                        <h4 class="blog__post-title">New Releases</h4>
+                        <p class="blog__post-description">Stay updated with the latest releases and projects in the animation industry.</p>
+                        <a href="newsdesign.html" class="button button-link">Read More</a>
+                    </div>
+                    <!-- Add more animation posts here -->
+                </div>
+            </div>
+        </section>
+
+        <!--========== SEND GIFT ==========-->
+        <section class="send section">
+            <div class="send__container bd-container bd-grid">
+                <div class="send__content">
+                    <h2 class="section-title-center send__title">Send Gift Now</h2>
+                    <p class="send__description">Start giving away before the holidays are over. Write the home address of the person who will send the gift.</p>
+                    <form action="">
+                        <div class="send__direction">
+                            <input type="text" placeholder="House address" class="send__input">
+                            <a href="#" class="button">Send</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="send__img">
+                    <img src="assets/img/send.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section">
+        <div class="footer__container bd-container bd-grid">
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    <a href="#" class="footer__logo">Address</a>
+                </h3>
+                <p class="footer__description">Kubwa Nasco Road <br> Abuja Nigeria</p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Web Design </a></li>
+                    <li><a href="#" class="footer__link">App Development</a></li>
+                    <li><a href="#" class="footer__link">Animation | Graphics</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+                <ul>
+                    <li><a href="news.html" class="footer__link">Blog</a></li>
+                    <li><a href="about.html" class="footer__link">About Us</a></li>
+                    <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <a href="https://www.facebook.com/terryems" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                <a href="https://www.linkedin.com/in/terryems" class="footer__social"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.github.com/terryems" class="footer__social"><i class='bx bxl-github'></i></a>
+
+                <a href="https://www.github.com/terryems" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2025 @aidoko. All right reserved</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+    <a href="https://wa.me/+2347069253361" class="whatsapp_float" target="_blank">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+    <style>
+        .whatsapp_float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 60px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .whatsapp_float i {
+            margin-top: 16px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+                arrows: false,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+</body>
+</html>
