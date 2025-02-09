@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="/jquery/jquery.js"></script>
@@ -9,18 +10,18 @@
 
         <!--========== BOX ICONS ==========-->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/slick/boxicons.min.css">
 
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <!-- <link rel="stylesheet" href="/boostrap/css/custom.css"> -->
-        <!-- <link rel="stylesheet" href="boostrap/css/bootstrap.min.css"> -->
-        <!-- <link rel="stylesheet" href="boostrap/css/bootstrap.rtl.min.css"> -->
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="assets/slick/slick.min.js"></script>
         
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        <link rel="stylesheet" href="assets/slick/slick.min.css">
+
+        <link rel="stylesheet" href="assets/slick/slick-theme.min.css">
         <title>Aidoko | Home</title>
     </head>
 <body>
@@ -32,11 +33,11 @@
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <a href="index.html" class="nav__logo">
+            <a href="#" class="nav__logo">
                 <!-- <img class="logo__main" src="assets/img/logo.png" alt="">
             <img src="assets/img/logo1.png" alt="" class="logo__secondary">
              -->
-             <div class="logo__main">
+             <div class="logo__main active-link">
                 <img src="/assets/img/logo.png" alt="Logo 1" class="logo__primary">
                 <img src="/assets/img/logo2.png" alt="logo" class="logo__secondary" style="display: none;"> 
               </div>
@@ -44,21 +45,18 @@
 
             <div class="nav__menu" id="nav-menu" style="background-color: #DA2535;">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link ">Home</a></li>
+                    <!-- <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li> -->
 
-                    <li class="nav__item dropdown">
-                        <a class="nav__link active-link">News</a>
-                        <div class="dropdown-content">
-                            <a href="newsclimate.html">Climate News</a>
-                            <a href="newstech.html">Tech News</a>
-                            <a href="newsdesign.html">Design</a>
-                        </div>
-                    </li>
+                   
+                    
 
 
-                    <li class="nav__item"><a href="design.html" class="nav__link">Designs | Animation</a></li>
-                    <li class="nav__item"><a href="Tech.html" class="nav__link">Tech | Programming</a></li>
+                    <li class="nav__item"><a href="design.html" class="nav__link">Design</a></li>
+                    <li class="nav__item"><a href="Tech.html" class="nav__link">Tech</a></li>
                     <li class="nav__item"><a href="climate.html" class="nav__link">Climate Change</a></li>
+                    <li class="nav__item"><a href="/blog/index.html" class="nav__link">News</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
 
                     <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
                 </ul>
@@ -79,19 +77,9 @@
                         <img src="assets/img/home1.png" alt="">
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Send A Gift For Christmas</h1>
-                        <p class="home__description">In these end of the year holidays send a gift to your loved one and share the happiness at Christmas.</p>
-                        <a href="#" class="button">Get Started</a>
-                    </div>
-                </div>
-                <div class="home__slide">
-                    <div class="home__img">
-                        <img src="assets/img/home21.png" alt="">
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Celebrate with Joy</h1>
-                        <p class="home__description">Share the joy of the season with your loved ones by sending them a special gift.</p>
-                        <a href="#" class="button">Get Started</a>
+                        <h1 class="home__title">Learn Programming</h1>
+                        <p class="home__description">Learn Python.</p>
+                        <a href="#" class="button">See More</a>
                     </div>
                 </div>
                 <div class="home__slide">
@@ -99,29 +87,39 @@
                         <img src="assets/img/home1.png" alt="">
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Spread Love</h1>
-                        <p class="home__description">Make this Christmas memorable by spreading love and happiness.</p>
-                        <a href="#" class="button">Get Started</a>
+                        <h1 class="home__title">Learn Programming</h1>
+                        <p class="home__description">Learn Python.</p>
+                        <a href="#" class="button">See More</a>
                     </div>
                 </div>
                 <div class="home__slide">
                     <div class="home__img">
-                        <img src="assets/img/home.png" alt="">
+                        <img src="assets/img/monica.png" alt="">
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Joyful Moments</h1>
-                        <p class="home__description">Create joyful moments by sending thoughtful gifts to your loved ones.</p>
-                        <a href="#" class="button">Get Started</a>
+                        <h1 class="home__title">Learn Programming</h1>
+                        <p class="home__description">Learn Python.</p>
+                        <a href="#" class="button">See More</a>
                     </div>
                 </div>
                 <div class="home__slide">
                     <div class="home__img">
-                        <img src="assets/img/home.png" alt="">
+                        <img src="assets/img/home1.png" alt="">
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Cherish Together</h1>
-                        <p class="home__description">Cherish the moments together by sharing gifts and love this Christmas.</p>
-                        <a href="#" class="button">Get Started</a>
+                        <h1 class="home__title">Learn Programming</h1>
+                        <p class="home__description">Learn Python.</p>
+                        <a href="#" class="button">See More</a>
+                    </div>
+                </div>
+                <div class="home__slide">
+                    <div class="home__img">
+                        <img src="assets/img/home1.png" alt="">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Learn Programming</h1>
+                        <p class="home__description">Learn Python.</p>
+                        <a href="#" class="button">See More</a>
                     </div>
                 </div>
             </div>
@@ -149,9 +147,16 @@
                 </div>
             </div>
         </section>
+        <style>
+            .videos__container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+            }
+        </style>
 
         <!--========== SHARE ==========-->
-        <section class="share section bd-container" id="share">
+        <!-- <section class="share section bd-container" id="share">
             <div class="share__container bd-grid">
                 <div class="share__data">
                     <h2 class="section-title-center">Sharing Is The Best Gift <br> You Can Give</h2>
@@ -163,35 +168,35 @@
                     <img src="assets/img/shared.png" alt="">
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--========== DECORATION ==========-->
         <section class="decoration section bd-container" id="decoration">
-            <h2 class="section-title">Give Christmas Decorations <br> For Your Home</h2>
+            <h2 class="section-title">Learn how to <br> Customise </h2>
             <div class="decoration__container bd-grid">
                 <div class="decoration__data">
-                    <img src="assets/img/decoration1.png" alt="" class="decoration__img">
-                    <h3 class="decoration__title">Christmas Bells</h3>
-                    <a href="#" class="button button-link">Go Shopping</a>
+                    <img src="assets/img/python.png" alt="" class="decoration__img">
+                    <h3 class="decoration__title">python Basics</h3>
+                    <a href="#" class="button button-link">Learn here</a>
                 </div>
 
                 <div class="decoration__data">
-                    <img src="assets/img/decoration2.png" alt="" class="decoration__img">
-                    <h3 class="decoration__title">Christmas Candies</h3>
-                    <a href="#" class="button button-link">Go Shopping</a>
+                    <img src="assets/img/krita.png" alt="" class="decoration__img">
+                    <h3 class="decoration__title">Inkscape Drawing</h3>
+                    <a href="#" class="button button-link">learn Here</a>
                 </div>
 
                 <div class="decoration__data">
-                    <img src="assets/img/decoration3.png" alt="" class="decoration__img">
-                    <h3 class="decoration__title">Christmas Trees</h3>
-                    <a href="#" class="button button-link">Go Shopping</a>
+                    <img src="assets/img/pencil2d.png" alt="" class="decoration__img" style="height: 190px; width: 190px;">
+                    <h3 class="decoration__title">Animation</h3>
+                    <a href="#" class="button button-link">learn to animate </a>
                 </div>
             </div>
         </section>
 
         <!--========== ACCESSORIES ==========-->
-        <section class="accessory section bd-container" id="accessory">
-            <h2 class="section-title">New Christmas <br> Accessories</h2>
+        <!-- <section class="accessory section bd-container" id="accessory">
+            <h2 class="section-title">Pay to <br> learn</h2>
 
             <div class="accessory__container bd-grid">
                 <div class="accessory__content">
@@ -234,7 +239,7 @@
                     <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--========== BLOG ==========-->
         <section class="blog section bd-container" id="blog">
@@ -246,13 +251,13 @@
                         <img src="assets/img/tech1.jpg" alt="Tech News 1" class="blog__post-img">
                         <h4 class="blog__post-title">Latest in Tech</h4>
                         <p class="blog__post-description">Stay updated with the latest trends and advancements in technology.</p>
-                        <a href="newstech.html" class="button button-link">Read More</a>
+                        <a href="newstech.html" class="button button-link read-more">Read More</a>
                     </div>
                     <div class="blog__post">
                         <img src="assets/img/tech2.jpg" alt="Tech News 2" class="blog__post-img">
                         <h4 class="blog__post-title">AI Innovations</h4>
                         <p class="blog__post-description">Discover the latest innovations in artificial intelligence and machine learning.</p>
-                        <a href="newstech.html" class="button button-link">Read More</a>
+                        <a href="newstech.html" class="button button-link read-more">Read More</a>
                     </div>
                     <!-- Add more tech posts here -->
                 </div>
@@ -263,13 +268,13 @@
                         <img src="assets/img/climate1.jpg" alt="Climate News 1" class="blog__post-img">
                         <h4 class="blog__post-title">Climate Change Updates</h4>
                         <p class="blog__post-description">Get the latest news and updates on climate change and its impact.</p>
-                        <a href="newsclimate.html" class="button button-link">Read More</a>
+                        <a href="newsclimate.html" class="button button-link read-more">Read More</a>
                     </div>
                     <div class="blog__post">
                         <img src="assets/img/climate2.jpg" alt="Climate News 2" class="blog__post-img">
                         <h4 class="blog__post-title">Sustainable Living</h4>
                         <p class="blog__post-description">Learn about sustainable living practices and how you can contribute to a greener planet.</p>
-                        <a href="newsclimate.html" class="button button-link">Read More</a>
+                        <a href="newsclimate.html" class="button button-link read-more">Read More</a>
                     </div>
                     <!-- Add more climate posts here -->
                 </div>
@@ -280,13 +285,13 @@
                         <img src="assets/img/animation1.jpg" alt="Animation News 1" class="blog__post-img">
                         <h4 class="blog__post-title">Animation News</h4>
                         <p class="blog__post-description">Discover the latest news and trends in the world of animation.</p>
-                        <a href="newsdesign.html" class="button button-link">Read More</a>
+                        <a href="newsdesign.html" class="button button-link read-more">Read More</a>
                     </div>
                     <div class="blog__post">
                         <img src="assets/img/animation2.jpg" alt="Animation News 2" class="blog__post-img">
                         <h4 class="blog__post-title">New Releases</h4>
                         <p class="blog__post-description">Stay updated with the latest releases and projects in the animation industry.</p>
-                        <a href="newsdesign.html" class="button button-link">Read More</a>
+                        <a href="newsdesign.html" class="button button-link read-more">Read More</a>
                     </div>
                     <!-- Add more animation posts here -->
                 </div>
@@ -297,13 +302,24 @@
         <section class="send section">
             <div class="send__container bd-container bd-grid">
                 <div class="send__content">
-                    <h2 class="section-title-center send__title">Send Gift Now</h2>
-                    <p class="send__description">Start giving away before the holidays are over. Write the home address of the person who will send the gift.</p>
+                    <h2 class="section-title-center send__title">Write me a Message</h2>
+                    <p class="send__description">Leave me an Email.</p>
                     <form action="">
                         <div class="send__direction">
-                            <input type="text" placeholder="House address" class="send__input">
-                            <a href="#" class="button">Send</a>
+                            <input type="text" placeholder="Your name" class="send__input" height="50px">
+
+                            
                         </div>
+
+                        <br>
+
+                        <div class="send__direction">
+                            <textarea  placeholder="Your Message" class="send__input" style="color: #25d366;"> </textarea>
+
+                            
+                            <a class="button">Send</a>
+                        </div>
+                       
                     </form>
                 </div>
 
@@ -327,16 +343,16 @@
             <div class="footer__content">
                 <h3 class="footer__title">Our Services</h3>
                 <ul>
-                    <li><a href="#" class="footer__link">Web Design </a></li>
-                    <li><a href="#" class="footer__link">App Development</a></li>
-                    <li><a href="#" class="footer__link">Animation | Graphics</a></li>
+                    <li><a href="climate.html" class="footer__link">Climate Change </a></li>
+                    <li><a href="Tech.html" class="footer__link">App Development</a></li>
+                    <li><a href="design.html" class="footer__link">Animation | Graphics</a></li>
                 </ul>
             </div>
 
             <div class="footer__content">
                 <h3 class="footer__title">Our Company</h3>
                 <ul>
-                    <li><a href="news.html" class="footer__link">Blog</a></li>
+                    <li><a href="blog/index.html" class="footer__link">Blog</a></li>
                     <li><a href="about.html" class="footer__link">About Us</a></li>
                     <li><a href="contact.html" class="footer__link">Contact Us</a></li>
                 </ul>
@@ -352,11 +368,12 @@
             </div>
         </div>
 
-        <p class="footer__copy">&#169; 2025 @aidoko. All right reserved</p>
+        <p class="footer__copy" > &#169;2025 | Aidoko  All right reserved</p>
     </footer>
 
     <!--========== SCROLL REVEAL ==========-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="assets/slick/scrollreveal.js"></script>
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
@@ -393,7 +410,13 @@
                 fade: true,
                 cssEase: 'linear'
             });
+
+            $('.read-more').on('click', function(event) {
+                event.preventDefault();
+                $(this).closest('.blog__post').find('.blog__post-description').slideToggle();
+            });
         });
     </script>
+    
 </body>
 </html>
