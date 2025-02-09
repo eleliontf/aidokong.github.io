@@ -453,43 +453,59 @@ img{
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
+.footer{
+  background-color: var(--first-color);
+}
 
 .footer__logo{
-  color: var(--title-color);
+  /* color: var(--title-color); */
+  
 }
 
 .footer__title{
   margin-bottom: var(--mb-2);
+  color: chartreuse;
 }
 
 .footer__logo, .footer__title{
   font-size: var(--h3-font-size);
+  color: chartreuse;
 }
 
 .footer__link{
   display: inline-block;
   margin-bottom: .75rem;
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: white;
 }
 
 .footer__link:hover{
-  color: var(--first-color);
+  /* color: var(--first-color); */
+  color: chartreuse;
 }
 
 .footer__social{
   font-size: 1.5rem;
-  color: var(--title-color);
+  /* color: var(--title-color); */
+  color: white;
   margin-right: var(--mb-3);
+}
+.footer__description{
+  color: white;
 }
 
 .footer__social:hover{
-  color: var(--first-color);
+  /* color: var(--first-color); */
+  color: chartreuse;
 }
 
 .footer__copy{
   text-align: center;
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  /* font-size: var(--small-font-size); */
+  font-size: 20px;
+  /* color: var(--text-color-light); */
+  color: white;
+
   margin-top: 4rem;
 }
 
