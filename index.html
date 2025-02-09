@@ -71,58 +71,16 @@
     <main class="l-main">
         <!--========== HOME ==========-->
         <section class="home" id="home">
-            <div class="home__container bd-container bd-grid slider">
-                <div class="home__slide">
-                    <div class="home__img">
-                        <img src="assets/img/home1.png" alt="">
+            
+                    <div style="height: 100%; margin-top: 3%;" >
+                        <img src="assets/img/all.png" alt="" class="large-image">
                     </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Learn Programming</h1>
-                        <p class="home__description">Learn Python.</p>
-                        <a href="#" class="button">See More</a>
+                
+                    <div class="progress-bar" id="progress">
+
                     </div>
-                </div>
-                <div class="home__slide">
-                    <div class="home__img">
-                        <img src="assets/img/home1.png" alt="">
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Learn Programming</h1>
-                        <p class="home__description">Learn Python.</p>
-                        <a href="#" class="button">See More</a>
-                    </div>
-                </div>
-                <div class="home__slide">
-                    <div class="home__img">
-                        <img src="assets/img/monica.png" alt="">
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Learn Programming</h1>
-                        <p class="home__description">Learn Python.</p>
-                        <a href="#" class="button">See More</a>
-                    </div>
-                </div>
-                <div class="home__slide">
-                    <div class="home__img">
-                        <img src="assets/img/home1.png" alt="">
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Learn Programming</h1>
-                        <p class="home__description">Learn Python.</p>
-                        <a href="#" class="button">See More</a>
-                    </div>
-                </div>
-                <div class="home__slide">
-                    <div class="home__img">
-                        <img src="assets/img/home1.png" alt="">
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Learn Programming</h1>
-                        <p class="home__description">Learn Python.</p>
-                        <a href="#" class="button">See More</a>
-                    </div>
-                </div>
-            </div>
+            
+            
         </section>
 
         <!--========== YOUTUBE VIDEOS ==========-->
@@ -380,6 +338,16 @@
     <a href="https://wa.me/+2347069253361" class="whatsapp_float" target="_blank">
         <i class='bx bxl-whatsapp'></i>
     </a>
+    <div class="whatsapp_popup" id="whatsapp_popup">
+        <div class="whatsapp_popup_header">
+            <span>WhatsApp Chat</span>
+            <button id="close_whatsapp_popup">&times;</button>
+        </div>
+        <div class="whatsapp_popup_body">
+            <p>How can I help you?</p>
+            <a href="https://wa.me/+2347069253361" target="_blank" class="button">Start Chat</a>
+        </div>
+    </div>
     <style>
         .whatsapp_float {
             position: fixed;
@@ -399,6 +367,48 @@
         .whatsapp_float i {
             margin-top: 16px;
         }
+
+        .whatsapp_popup {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            left: 60px;
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 101;
+        }
+
+        .whatsapp_popup_header {
+            padding: 10px;
+            background-color: #25d366;
+            color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .whatsapp_popup_body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .whatsapp_popup_body p {
+            margin-bottom: 20px;
+        }
+
+        .whatsapp_popup_body .button {
+            background-color: #25d366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
     </style>
     <script>
         $(document).ready(function(){
@@ -416,7 +426,47 @@
                 $(this).closest('.blog__post').find('.blog__post-description').slideToggle();
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const whatsappFloat = document.querySelector('.whatsapp_float');
+            const whatsappPopup = document.getElementById('whatsapp_popup');
+            const closeWhatsappPopup = document.getElementById('close_whatsapp_popup');
+
+            whatsappFloat.addEventListener('click', function(event) {
+                event.preventDefault();
+                whatsappPopup.style.display = 'block';
+            });
+
+            closeWhatsappPopup.addEventListener('click', function() {
+                whatsappPopup.style.display = 'none';
+            });
+        });
     </script>
     
+<style>
+    .home__slide {
+        display: none;
+    }
+    .home__slide.active {
+        display: block;
+    }
+    .progress-bar {
+        /* margin-top: 3%; */
+        width: 100%;
+        height: 5px;
+        background-color: #ff0000;
+        position: relative;
+        top: -5px;
+    }
+    .progress {
+        height: 100%;
+        background-color: #DA2535;
+        width: 0;
+    }
+    .home__img img.large-image {
+        width: 100%;
+        height: auto;
+    }
+</style>
 </body>
 </html>
