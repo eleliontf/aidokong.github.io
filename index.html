@@ -15,6 +15,7 @@
 
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" href="assets/img/favicon.ico">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
@@ -23,7 +24,8 @@
         <link rel="stylesheet" href="assets/slick/slick.min.css">
 
         <link rel="stylesheet" href="assets/slick/slick-theme.min.css">
-        <title>Aidoko | Home</title>
+        <title>Aidoko</title>
+        <script src="https://meet.jit.si/external_api.js"></script>
     </head>
 <body>
     <!--========== SCROLL TOP ==========-->
@@ -32,7 +34,7 @@
     </a>
     
     <!--========== HEADER ==========-->
-    <header class="l-header" id="header">
+    <header class="l-header" >
         <nav class="nav bd-container">
             <a href="#" class="nav__logo">
                 <!-- <img class="logo__main" src="assets/img/logo.png" alt="">
@@ -52,12 +54,12 @@
                     
 
 
-                    <li class="nav__item"><a href="design.html" class="nav__link">Design</a></li>
-                    <li class="nav__item"><a href="Tech.html" class="nav__link">Tech</a></li>
-                    <li class="nav__item"><a href="climate.html" class="nav__link">Climate Change</a></li>
-                    <li class="nav__item"><a href="/blog/index.html" class="nav__link">News</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
+                    <li class="nav__item"><a href="#design" class="nav__link">Design</a></li>
+                    <li class="nav__item"><a href="#tech" class="nav__link">Tech</a></li>
+                    <li class="nav__item"><a href="#climate" class="nav__link">Climate Change</a></li>
+                    <li class="nav__item"><a href="https://blog.aidoko.com.ng" class="nav__link">News</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#contact_us" class="nav__link">Contact Us</a></li>
 
                     <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
                 </ul>
@@ -83,9 +85,20 @@
             
             
         </section>
+        <section class="about section bd-container" id="about">
+            <div class="about__container bd-grid">
+                <div class="about_data">
+                    <h2 class="section-title-center">About Me</h2>
+                    <img src="assets/img/me.png" alt="Your Picture" class="about__img">
+                    <p class="about__description">Hello, I'm Emmanuel. I am a software developer with a passion for creating innovative solutions. I specialize in web development, design, and animation. Let's work together to bring your ideas to life.</p>
+                    <a href="#" class="button">Hire Me</a>
+                    <a href="tel:+2347069253361" class="button">Call Me</a>
+                </div>
+            </div>
+        </section>
 
         <!--========== YOUTUBE VIDEOS ==========-->
-        <section class="videos section bd-container" id="videos">
+        <!-- <section class="videos section bd-container" id="videos" class="videos">
             <h2 class="section-title">Watch Our Videos</h2>
             <div class="videos__container bd-grid">
                 <div class="video__content">
@@ -101,11 +114,13 @@
                     <h3 class="video__title">Climate Change: Crash Course Kids</h3>
                 </div>
                 <div class="video__content">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/QPqap-onmv8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h3 class="Pencil2D | Learn 2D Animation Tutorial Overview</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/QPqap-onmv8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+                    <h3 >  Pencil2D | Learn 2D Animation Tutorial Overview </h3>
                 </div>
             </div>
-        </section>
+            
+        </section> -->
+
         <style>
             .videos__container {
                 display: grid;
@@ -114,139 +129,297 @@
             }
         </style>
 
-        <!--========== SHARE ==========-->
-       
+        <!-- ====== DESIGN ========= -->
+        <section class="news section bd-container" id="design" style="margin-top: -200px;">
+            <div class="news__container bd-grid">
+                <div class="news__data">
+                    <h2 class="section-title-center">Learn To Design like a PRO</h2>
+                    <div class="news__img">
+                        <img src="assets/img/fish.png" alt="News Image" class="news___img">
+                    </div>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
+                    </div>
+                    <a href="#" class="button" id="read-more-btn">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
 
-        <!--========== DECORATION ==========-->
-        <section class="decoration section bd-container" id="decoration">
-            <h2 class="section-title">Learn how to <br> Customise </h2>
-            <div class="decoration__container bd-grid">
-                <div class="decoration__data">
-                    <img src="assets/img/python.png" alt="" class="decoration__img">
-                    <h3 class="decoration__title">python Basics</h3>
-                    <a href="#" class="button button-link">Learn here</a>
                 </div>
 
-                <div class="decoration__data">
-                    <img src="assets/img/krita.png" alt="" class="decoration__img">
-                    <h3 class="decoration__title">Inkscape Drawing</h3>
-                    <a href="#" class="button button-link">learn Here</a>
+                <div class="news__data">
+                    <div class="news__img">
+                        <img src="assets/img/tortoise.png" alt="News Image" class="news___img">
+                    </div>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional1" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
+                    </div>
+                    <a href="#" class="button" id="read-more-btn1">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
+
                 </div>
 
-                <div class="decoration__data">
-                    <img src="assets/img/pencil2d.png" alt="" class="decoration__img" style="height: 190px; width: 190px;">
-                    <h3 class="decoration__title">Animation</h3>
-                    <a href="#" class="button button-link">learn to animate </a>
+                <div class="news__data">
+                    <div class="news__img">
+                        <img src="assets/img/simpson.png" alt="News Image" class="news___img">
+                    </div>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional2" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
+                    </div>
+                    <a href="#" class="button" id="read-more-btn2">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
+
                 </div>
+
+                <div class="news__data">
+                    <div class="news__img">
+                        <img src="assets/img/krita.png" alt="News Image" class="news___img">
+                    </div>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional3" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
+                    </div>
+                    <a href="#" class="button" id="read-more-btn3">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
+
+                </div>
+
+                <div class="news_data">
+                    <a href="climate.html" class="button">Climate News</a>
+                    <a href="Tech.html" class="button" >Tech News</a>
+                </div>
+
+               
             </div>
         </section>
 
-        <!--========== ACCESSORIES ==========-->
-        <!-- <section class="accessory section bd-container" id="accessory">
-            <h2 class="section-title">Pay to <br> learn</h2>
+       
+       
+        <!--========== TECH ==========-->
+        <section class="news section bd-container" id="tech">
+            <div class="news__container bd-grid">
+                <div class="news__data">
+                    <h2 class="section-title-center">Tech News</h2>
+                    <div class="news__img">
+                        <img src="assets/img/build_android.png" alt="News Image" class="news___img">
+                    </div>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
+                    </div>
+                    <a href="#" class="button" id="read-more-btn">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
 
-            <div class="accessory__container bd-grid">
-                <div class="accessory__content">
-                    <img src="assets/img/accessory1.png" alt="" class="accessory__img">
-                    <h3 class="accessory__title">Snow Globe</h3>
-                    <span class="accessory__category">Accessory</span>
-                    <span class="accessory__preci">$9.45</span>
-                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
                 </div>
 
-                <div class="accessory__content">
-                    <img src="assets/img/accessory2.png" alt="" class="accessory__img">
-                    <h3 class="accessory__title">Candy</h3>
-                    <span class="accessory__category">Accessory</span>
-                    <span class="accessory__preci">$2.52</span>
-                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                <div class="news__data">
+                    <div class="news__img">
+                        <img src="assets/img/js.png" alt="News Image" class="news___img">
+                    </div>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional1" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
+                    </div>
+                    <a href="#" class="button" id="read-more-btn1">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
+
                 </div>
 
-                <div class="accessory__content">
-                    <img src="assets/img/accessory3.png" alt="" class="accessory__img">
-                    <h3 class="accessory__title">Angel</h3>
-                    <span class="accessory__category">Accessory</span>
-                    <span class="accessory__preci">$13.15</span>
-                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                <div class="news__data">
+                    <div class="news__img">
+                        <img src="assets/img/css_html.png" alt="News Image" class="news___img">
+                    </div>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional2" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
+                    </div>
+                    <a href="#" class="button" id="read-more-btn2">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
+
                 </div>
 
-                <div class="accessory__content">
-                    <img src="assets/img/accessory4.png" alt="" class="accessory__img">
-                    <h3 class="accessory__title">Sphere</h3>
-                    <span class="accessory__category">Accessory</span>
-                    <span class="accessory__preci'>$4.25</span>
-                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                <div class="news__data">
+                    <div class="news__img">
+                        <img src="assets/img/qrcode.png" alt="News Image" class="news___img">
+                    </div>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional3" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
+                    </div>
+                    <a href="#" class="button" id="read-more-btn3">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
+
                 </div>
 
-                <div class="accessory__content">
-                    <img src="assets/img/accessory5.png" alt="" class="accessory__img">
-                    <h3 class="accessory__title">Surprise gift</h3>
-                    <span class="accessory__category">Accessory</span>
-                    <span class="accessory__preci">$7.99</span>
-                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                <div class="news_data">
+                    <a href="climate.html" class="button">Climate News</a>
+                    <a href="newsdesign.html" class="button" >Design News</a>
                 </div>
+
+               
             </div>
-        </section> -->
+        </section>
 
-        <!--========== BLOG ==========-->
-        <section class="blog section bd-container" id="blog">
-            <h2 class="section-title">Latest News</h2>
-            <div class="blog__container bd-grid">
-                <div class="blog__content">
-                    <h3 class="blog__title">Tech</h3>
-                    <div class="blog__post">
-                        <img src="assets/img/tech1.jpg" alt="Tech News 1" class="blog__post-img">
-                        <h4 class="blog__post-title">Latest in Tech</h4>
-                        <p class="blog__post-description">Stay updated with the latest trends and advancements in technology.</p>
-                        <a href="newstech.html" class="button button-link read-more">Read More</a>
+        <!-- =========climate change ========== -->
+
+        <section class="news section bd-container" id="climate">
+            <div class="news__container bd-grid">
+                <div class="news__data">
+                    <h2 class="section-title-center">Climate News</h2>
+                    <div class="news__img">
+                        <img src="assets/img/cli1.png" alt="News Image" class="news___img">
                     </div>
-                    <div class="blog__post">
-                        <img src="assets/img/tech2.jpg" alt="Tech News 2" class="blog__post-img">
-                        <h4 class="blog__post-title">AI Innovations</h4>
-                        <p class="blog__post-description">Discover the latest innovations in artificial intelligence and machine learning.</p>
-                        <a href="newstech.html" class="button button-link read-more">Read More</a>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
                     </div>
-                    <!-- Add more tech posts here -->
+                    <a href="#" class="button" id="read-more-btn">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
+
                 </div>
 
-                <div class="blog__content">
-                    <h3 class="blog__title">Climate</h3>
-                    <div class="blog__post">
-                        <img src="assets/img/climate1.jpg" alt="Climate News 1" class="blog__post-img">
-                        <h4 class="blog__post-title">Climate Change Updates</h4>
-                        <p class="blog__post-description">Get the latest news and updates on climate change and its impact.</p>
-                        <a href="newsclimate.html" class="button button-link read-more">Read More</a>
+                <div class="news__data">
+                    <div class="news__img">
+                        <img src="assets/img/cli2.png" alt="News Image" class="news___img">
                     </div>
-                    <div class="blog__post">
-                        <img src="assets/img/climate2.jpg" alt="Climate News 2" class="blog__post-img">
-                        <h4 class="blog__post-title">Sustainable Living</h4>
-                        <p class="blog__post-description">Learn about sustainable living practices and how you can contribute to a greener planet.</p>
-                        <a href="newsclimate.html" class="button button-link read-more">Read More</a>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional1" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
                     </div>
-                    <!-- Add more climate posts here -->
+                    <a href="#" class="button" id="read-more-btn1">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
+
                 </div>
 
-                <div class="blog__content">
-                    <h3 class="blog__title">Animation</h3>
-                    <div class="blog__post">
-                        <img src="assets/img/animation1.jpg" alt="Animation News 1" class="blog__post-img">
-                        <h4 class="blog__post-title">Animation News</h4>
-                        <p class="blog__post-description">Discover the latest news and trends in the world of animation.</p>
-                        <a href="newsdesign.html" class="button button-link read-more">Read More</a>
+                <div class="news__data">
+                    <div class="news__img">
+                        <img src="assets/img/cl3.png" alt="News Image" class="news___img">
                     </div>
-                    <div class="blog__post">
-                        <img src="assets/img/animation2.jpg" alt="Animation News 2" class="blog__post-img">
-                        <h4 class="blog__post-title">New Releases</h4>
-                        <p class="blog__post-description">Stay updated with the latest releases and projects in the animation industry.</p>
-                        <a href="newsdesign.html" class="button button-link read-more">Read More</a>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional2" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
                     </div>
-                    <!-- Add more animation posts here -->
+                    <a href="#" class="button" id="read-more-btn2">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
+
                 </div>
+
+                <div class="news__data">
+                    <div class="news__img">
+                        <img src="assets/img/cl4.PNG" alt="News Image" class="news___img">
+                    </div>
+                    <p class="news__description">Stay updated with the latest news and articles on climate change, technology, and more.</p>
+                    <div class="news__additional3" style="display: none;">
+                        <p>Additional news content goes here. This section will be revealed when the "Read More" button is clicked.</p>
+                    </div>
+                    <a href="#" class="button" id="read-more-btn3">Read More</a>
+                    <div class="tech-news" style="display: none;">
+                        <p>Latest updates and articles on technology and programming.</p>
+                    </div>
+                    <div class="design-news" style="display: none;">
+                        <p>Latest updates and articles on design and animation.</p>
+                    </div>
+                    <br>
+                    <br>
+
+                </div>
+
+                <div class="news_data">
+                    <a href="Tech.html" class="button">Tech News</a>
+                    <a href="design.html" class="button" >Design News</a>
+                </div>
+
+               
             </div>
+        </section>
+          <!--========== VIRTUAL LESSON ==========-->
+          <section class="virtual-lesson section bd-container" id="virtual-lesson">
+            <h2 class="section-title-center">Join Our Virtual Lesson</h2>
+            <input type="text" id="meeting-code" placeholder="Enter Meeting Code" class="send__input" style="height: 50px; background-color:  #ffffff; border: #25d366 2px solid; border-radius: 5px; box-shadow: 2px 2px 2px black;">
+           <br> <br>  <button id="join-meeting" class="button">Join Meeting</button>
+            <div id="jitsi-container" style="height: 600px; display: none;"></div>
         </section>
 
         <!--========== SEND GIFT ==========-->
-        <section class="send section">
+        <section class="send section" id="contact_us">
             <div class="send__container bd-container bd-grid">
                 <div class="send__content">
                     <h2 class="section-title-center send__title">Write me a Message</h2>
@@ -275,6 +448,7 @@
                 </div>
             </div>
         </section>
+       
     </main>
 
     <!--========== FOOTER ==========-->
@@ -290,18 +464,18 @@
             <div class="footer__content">
                 <h3 class="footer__title">Our Services</h3>
                 <ul>
-                    <li><a href="climate.html" class="footer__link">Climate Change </a></li>
-                    <li><a href="Tech.html" class="footer__link">App Development</a></li>
-                    <li><a href="design.html" class="footer__link">Animation | Graphics</a></li>
+                    <li><a href="#climate" class="footer__link">Climate Change </a></li>
+                    <li><a href="#tech" class="footer__link">App Development</a></li>
+                    <li><a href="#design" class="footer__link">Animation | Graphics</a></li>
                 </ul>
             </div>
 
             <div class="footer__content">
                 <h3 class="footer__title">Our Company</h3>
                 <ul>
-                    <li><a href="blog/index.html" class="footer__link">Blog</a></li>
-                    <li><a href="about.html" class="footer__link">About Us</a></li>
-                    <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+                    <li><a href="https://blog.aidoko.com.ng" class="footer__link">Blog</a></li>
+                    <li><a href="#about" class="footer__link">About Us</a></li>
+                    <li><a href="#contac_us" class="footer__link">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -393,7 +567,7 @@
         .whatsapp_popup_body .button {
             background-color: #25d366;
             color: #fff;
-            padding: 10px 20px;   
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
             text-decoration: none;
