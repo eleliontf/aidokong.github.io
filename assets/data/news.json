@@ -1,0 +1,38 @@
+[
+  {
+    "title": "News 1",
+    "content": "<b>Detailed</b> content for News 1. Stay updated with the latest trends. What more can I say?<br><br>",
+    "image": "assets/img/cl3.png",
+    "link": "https://aidoko.com.ng/news1"
+  },
+
+
+
+  
+  {
+    "title": "News 2",
+    "content": "Detailed content for News 2. Learn about the latest in technology.",
+    "image": "assets/img/cli1.png",
+    "link": "https://aidoko.com.ng/news2"
+  },
+
+
+
+
+  {
+    "title": "News 3",
+    "content": "Detailed content for News 3. Explore design and animation updates.",
+    "image": "assets/img/cl3.png",
+    "link": "https://aidoko.com.ng/news3"
+  },
+
+
+
+
+  {
+    "title": "News 4",
+    "content": "Detailed content for News 4. Discover insights on climate change.",
+    "image": "assets/img/fish.png",
+    "link": "https://aidoko.com.ng/news4"
+  }
+]
